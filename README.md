@@ -1,18 +1,53 @@
-# 🧠 Logistic Regression – Flutter
+# Logistic Regression Sentiment Analysis
 
 Proyek ini berisi implementasi sederhana **Logistic Regression** untuk sentiment analysis.
 
-## 1. Pendahuluan
+---
 
-Versi Flutter ini menunjukkan bagaimana aplikasi mobile dapat mengirimkan teks ke server (API) untuk mendapatkan hasil prediksi berbasis **Logistic Regression**.
+## 🧠 1. Pendahuluan
 
-## 2. Dataset & API
+Versi Flutter ini mendemonstrasikan bagaimana aplikasi mobile mengirimkan teks ke server (API) kemudian mendapatkan hasil prediksi berbasis **Logistic Regression Multiclass**.
 
-- **Dataset**: [Link](https://raw.githubusercontent.com/fahmi54321/sentiment_analysis/refs/heads/main/AirlineTweets.csv)
-- **API**: [Link](https://github.com/fahmi54321/sentiment_analysis/blob/main/sentiment_analysis_multiclass_api.py)
-- **Logistic Regression Python**: [Link](https://github.com/fahmi54321/sentiment_analysis/blob/main/sentiment_analysis_multiclass.py)
+Model memprediksi tiga label:
 
-## 4. Flutter
+- 😊 **Positive**
+- 😡 **Negative**
+- 😐 **Neutral**
 
-- **Versi**: 3.38.3
+---
+
+## 📁 2. Dataset & API
+
+- **Dataset**  
+  https://raw.githubusercontent.com/fahmi54321/sentiment_analysis/refs/heads/main/AirlineTweets.csv
+
+- **API Flask (sentiment prediction endpoint)**  
+  https://github.com/fahmi54321/sentiment_analysis/blob/main/sentiment_analysis_multiclass_api.py
+
+- **Python Logistic Regression (training code)**  
+  https://github.com/fahmi54321/sentiment_analysis/blob/main/sentiment_analysis_multiclass.py
+
+---
+
+## 📊 3. Confusion Matrix (Training Data)
+
+![Confusion Matrix Training](images/training.png)
+
+---
+
+## 📊 4. Confusion Matrix (Test Data)
+
+![Confusion Matrix Test](images/test.png)
+
+---
+
+## 📱 5. Flutter App
+
+- **Flutter Version**: 3.38.3
 - **State Management**: Provider
+- Aplikasi menganalisis teks dan menampilkan probabilitas sentiment:
+  - Negative
+  - Neutral
+  - Positive
+
+---
